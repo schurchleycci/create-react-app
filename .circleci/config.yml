@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - run:
-        command: ls
+          command: ls
       - node/install-packages:
           pkg-manager: npm
       - run:
