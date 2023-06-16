@@ -11,6 +11,8 @@ jobs:
       JEST_JUNIT_OUTPUT_DIR: ./test-results/
     steps:
       - checkout
+      - run:
+        command: ls
       - node/install-packages:
           pkg-manager: npm
       - run:
